@@ -83,18 +83,19 @@ cd <repo-name>
 
 ```bash
 # Crea una rama para tu trabajo
-git checkout -b feature/my-topic
+git checkout -b feature/my-topic # para crear
+git checkout feature/my-topic #para cambiar
 
 # Realiza tus cambios, añade y commitea
-git add -A
+git add -A # control s
 git commit -m "Add: tutorial for X"
 
 # Actualiza tu rama con los últimos cambios de main
-git fetch upstream
+git fetch upstream 
 git rebase upstream/main
 
 # Haz push a tu fork
-git push -u origin feature/my-topic
+git push # guardar en github
 ```
 
 Abre un Pull Request en GitHub desde tu rama hacia `main`.
